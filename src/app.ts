@@ -89,3 +89,10 @@ const add6 = (...numbers: [number,number,number]) => {
 
 const addNumbers2 = add6(1,5,4);
 console.log(addNumbers2);
+
+const newhobbies = ['Sports', 'Cooking'];
+// const hobby1 = newhobbies[0];
+// const hobby2 = newhobbies[1];
+
+const [hobby1,hobby2, ...remainingHobbies] = newhobbies;
+console.log(hobbies,hobby1,hobby2);
