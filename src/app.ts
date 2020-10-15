@@ -44,3 +44,11 @@ const button = document.querySelector('button');
 if(button){
     button.addEventListener('click', event=>console.log(event));
 }
+
+/* Default assignment need to be last */
+const add4 = (a:number, b:number =1) => a+b;
+console.log(add4(2));
+
+/* Default assignment need to be last because the last parameter will be empty*/
+// const add5 = (a:number=1, b:number) => a+b;
+// console.log(add5(2));
