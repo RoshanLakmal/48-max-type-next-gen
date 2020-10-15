@@ -61,6 +61,7 @@ const activeHobbies = ['Hiking'];
 // Both way works
 const activeHobbies1 = ['Hiking',...hobbies];
 activeHobbies1.push(...hobbies);
+console.log(activeHobbies1);
 
 const person = {
     name: 'Max',
@@ -69,4 +70,13 @@ const person = {
 
 const refPerson = person; // Not copying just reference to the same object
 const copiedPerson = {...person}; // copying
+console.log(copiedPerson);
 
+const add5 = (...numbers: number[]) => {
+    return numbers.reduce((curResult,curValue) => {
+        return curResult + curValue;
+    },0);
+};
+
+const addNumbers = add5(1,5,4);
+console.log(addNumbers);
