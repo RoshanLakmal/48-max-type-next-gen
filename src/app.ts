@@ -78,5 +78,14 @@ const add5 = (...numbers: number[]) => {
     },0);
 };
 
-const addNumbers = add5(1,5,4);
+const addNumbers = add5(1,5,3,1);
 console.log(addNumbers);
+
+const add6 = (...numbers: [number,number,number]) => {
+    return numbers.reduce((curResult,curValue) => {
+        return curResult + curValue;
+    },0);
+};
+
+const addNumbers2 = add6(1,5,4);
+console.log(addNumbers2);
