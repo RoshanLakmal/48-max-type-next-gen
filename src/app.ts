@@ -20,3 +20,27 @@ function add(a:number,b:number){
 // }
 
 // console.log(isOld); // Will not work in the browser
+
+/* Arrow functions */
+const add2 = (a:number, b:number) => {
+    return a+b;
+};
+console.log(add2(2,5));
+
+/* One expression short form */
+const add3 = (a:number, b:number) => a+b;
+console.log(add3(2,2));
+
+const printOutput = (output: string | number) => {
+    console.log(output)
+}
+printOutput(add3(6,2));
+
+/* Short form single argument */
+const printOutput2:(a:number | string)=> void = output=> console.log(output);
+printOutput2(add3(3,2));
+
+const button = document.querySelector('button');
+if(button){
+    button.addEventListener('click', event=>console.log(event));
+}
