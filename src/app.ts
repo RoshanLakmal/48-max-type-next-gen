@@ -52,3 +52,12 @@ console.log(add4(2));
 /* Default assignment need to be last because the last parameter will be empty*/
 // const add5 = (a:number=1, b:number) => a+b;
 // console.log(add5(2));
+
+const hobbies = ['Sports', 'Cooking'];
+const activeHobbies = ['Hiking'];
+
+// activeHobbies.push(hobbies); //Not going to work because it accepts strings not string[]
+
+// Both way works
+const activeHobbies1 = ['Hiking',...hobbies];
+activeHobbies1.push(...hobbies);
