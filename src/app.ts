@@ -61,3 +61,12 @@ const activeHobbies = ['Hiking'];
 // Both way works
 const activeHobbies1 = ['Hiking',...hobbies];
 activeHobbies1.push(...hobbies);
+
+const person = {
+    name: 'Max',
+    age: 30
+}
+
+const refPerson = person; // Not copying just reference to the same object
+const copiedPerson = {...person}; // copying
+
